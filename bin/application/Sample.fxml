@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="525.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <top>
+      <AnchorPane fx:id="anchor" prefHeight="750.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="menu_A" layoutX="38.0" layoutY="88.0" mnemonicParsing="false" onAction="#openLogFile" text="A - load_log()" />
+            <Button fx:id="menu_0" layoutX="210.0" layoutY="462.0" mnemonicParsing="false" onAction="#exitProgram" text="0 - Exit program" />
+            <Button fx:id="menu_B" layoutX="39.0" layoutY="130.0" mnemonicParsing="false" onAction="#buttonB" text="B - print_collection()" />
+            <Button fx:id="menu_C" layoutX="38.0" layoutY="173.0" mnemonicParsing="false" onAction="#buttonC" text="C - print_count()" />
+            <Button fx:id="menu_D" layoutX="39.0" layoutY="218.0" mnemonicParsing="false" onAction="#openRosterFile" text="D - load_log()" />
+            <Button fx:id="menu_E" layoutX="39.0" layoutY="256.0" mnemonicParsing="false" onAction="#buttonE" text="E - print_collection()" />
+            <Button fx:id="menu_F" layoutX="39.0" layoutY="302.0" mnemonicParsing="false" onAction="#buttonF" text="F - print_count()" />
+            <Button fx:id="menu_G" layoutX="38.0" layoutY="344.0" mnemonicParsing="false" onAction="#buttonG" text="G - list_students_not_in_class()" />
+            <Button fx:id="menu_H" layoutX="38.0" layoutY="382.0" mnemonicParsing="false" onAction="#buttonH" text="H - list_all_times_checking_in_and_out()" />
+            <Button fx:id="menu_I" layoutX="38.0" layoutY="420.0" mnemonicParsing="false" onAction="#buttonI" text="I - list_all_times_checked_in()" />
+            <Button fx:id="menu_J" layoutX="275.0" layoutY="88.0" mnemonicParsing="false" onAction="#buttonJ" text="J - list_students_late_to_class()" />
+            <Button fx:id="menu_K" layoutX="274.0" layoutY="130.0" mnemonicParsing="false" onAction="#buttonK" text="K - get_first_student_to_enter()" />
+            <Button fx:id="menu_L" layoutX="275.0" layoutY="173.0" mnemonicParsing="false" onAction="#buttonL" text="L - print_attendance_data_for_student()" />
+            <Button fx:id="menu_M" layoutX="274.0" layoutY="218.0" mnemonicParsing="false" onAction="#buttonM" prefHeight="25.0" prefWidth="100.0" text="M - is_present()" />
+            <Button fx:id="menu_N" layoutX="273.0" layoutY="256.0" mnemonicParsing="false" onAction="#buttonN" prefHeight="25.0" prefWidth="190.0" text="N - list_all_students_checked_in()" />
+            <Button fx:id="menu_O" layoutX="275.0" layoutY="302.0" mnemonicParsing="false" onAction="#buttonO" text="O - list_all_students_checked_in_before()" />
+            <Button fx:id="menu_P" layoutX="275.0" layoutY="344.0" mnemonicParsing="false" onAction="#buttonP" text="P - list_students_attendance_count()" />
+            <Button fx:id="menu_Q" layoutX="275.0" layoutY="382.0" mnemonicParsing="false" onAction="#buttonQ" text="Q - get_first_student_to_enter()" />
+            <Button fx:id="menu_R" layoutX="273.0" layoutY="420.0" mnemonicParsing="false" onAction="#buttonR" text="R - print_query_list()" />
+            <Button fx:id="menu_S" layoutX="411.0" layoutY="420.0" mnemonicParsing="false" onAction="#buttonS" text="S - print_count()" />
+            <TextArea fx:id="textOut" layoutY="520.0" prefHeight="225.0" prefWidth="525.0" />
+            <Button fx:id="swipeFile" layoutX="38.0" layoutY="14.0" mnemonicParsing="false" onAction="#openLogFile" prefWidth="105.0" text="Load Swipe Data" />
+            <Button fx:id="rosterFile" layoutX="378.0" layoutY="14.0" mnemonicParsing="false" onAction="#openRosterFile" text="Load Roster Data" />
+            <TextField fx:id="nameInput" layoutX="152.0" layoutY="565.0" onAction="#closeName" prefHeight="89.0" prefWidth="231.0" />
+            <Label fx:id="nameInputLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="140.0" layoutY="541.0" prefHeight="24.0" prefWidth="251.0" text="Enter Students Name. Press Enter to Close" />
+            <Label fx:id="timeInputLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="150.0" layoutY="541.0" prefHeight="24.0" prefWidth="251.0" text="Enter Timestamp. Press Enter to Close" />
+            <Label fx:id="dateInputLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="148.0" layoutY="541.0" prefHeight="24.0" prefWidth="251.0" text="Enter Date. Press Enter to Close" />
+            <Label fx:id="intInputLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="150.0" layoutY="541.0" prefHeight="24.0" prefWidth="251.0" text="Enter an Integer. Press Enter to Close" />
+            <Label fx:id="idLabel" layoutX="214.0" layoutY="18.0" text="Label" />
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>
